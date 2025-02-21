@@ -1,0 +1,43 @@
+/* src/Navbar.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar {
+  width: 100%; /* Ensure the navbar spans the full width of the page */
+  background-color: #4B0082; /* Purple background */
+  padding: 10px 0; /* Padding for the navbar */
+  position: fixed; /* Fix the navbar at the top of the page */
+  top: 0; /* Position the navbar at the top */
+  z-index: 1000; /* Ensure the navbar stays above other content */
+}
+
+.navbar ul {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-around; /* Space items evenly */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  width: 100%; /* Ensure the navbar takes up full width */
+}
+
+.navbar ul li {
+  color: white; /* White text color */
+  font-weight: bold; /* Bold text */
+  flex-grow: 1; /* Allow the items to grow and take up available space equally */
+  text-align: center; /* Center text inside each item */
+}
+
+.navbar ul li a {
+  color: white; /* White link color */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make the link take up the full height of the list item */
+  padding: 10px 0; /* Add some vertical padding for better spacing */
+}
+
+/* Ensure content below the navbar is not hidden */
+.content {
+  margin-top: 50px; /* Adjust this value based on the height of your navbar */
+}
